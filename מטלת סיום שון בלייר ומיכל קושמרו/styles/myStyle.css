@@ -1,0 +1,373 @@
+﻿body {
+    direction: rtl;
+    margin: auto;
+   background-color: bisque;
+}
+
+b{
+
+color:brown    
+}
+
+
+
+main{
+    margin:0px 10px;
+}
+
+#index container {
+    height: 650px;
+}
+
+nav { /*תפריט הניווט*/
+    display: block;
+    background-color: rgb(253, 179, 74);
+    height: 70px;
+}
+
+#logo{/*לוגו האתר*/
+    display:inline-block;
+    float:right;
+    height:100%;
+    width:15%;
+    margin-left:20px;
+    background-color: antiquewhite;
+}
+
+#category { /*רשימת הקטגוריות*/
+    margin: 0;
+    padding: 0;
+    list-style: none; /*העלמת תבליטים*/
+    margin-top: 10px;
+}
+
+
+nav ul li a {/*אופן ההצגה שלהם(צבע, גודל וכו)*/
+    color: rgb(133, 62, 0);
+    text-decoration: none; /*העלמת קו תחתון*/
+    font-size: 20px;
+    text-align: center;
+    float: right;
+    margin: 20px;
+    display: inline-block;
+    box-shadow: 0px 9px rgb(255, 162, 0);
+}
+
+nav ul li a:hover{ /*מעבר עכבר על הקטגוריות בניווט*/
+    background-color:rgb(255, 164, 7);
+    
+}
+
+
+#conect {/*כפתור צור קשר*/
+    background-color: rgb(255, 154, 2);
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(147, 71, 4);
+    margin: 5px 20px;
+    height: 50px;
+    width: 120px;
+    float: left;
+    border-radius: 12px;   /* עיגול הפינות*/
+    cursor: pointer;  /*שינוי הלחצן*/
+    transition: all 0.4s;
+    border: 2px solid black;
+    opacity: 0.5;
+    box-shadow: 0px 9px grey;
+    /* הראשון זה לצדדים השני זה למטה והשלישי זה צבע*/
+    }
+
+#conect:hover {/*מעבר עכבר על כפתור צור קשר*/
+    opacity:1;
+}
+
+#conect:active {/*בלחיצה*/
+    box-shadow: 0px 5px rgb(184, 114, 2);
+    transform:translateY(4px);
+    transition:0.2s;
+}
+
+#conect span {/*הטקסט על הכפתור*/
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    margin-top:15px;
+    margin-right:5px;
+
+}
+
+#conect span:after {/*הוספה של חץ על הכפתור כרגע לא נראה לעין*/
+    content: '\00bb';
+    position: relative;
+    opacity: 0;
+    top: 0;
+    right: 30px;
+    transition: 0.5s;
+}
+#conect:hover span {/*מעבר עכבר לטקסט*/
+    padding-left: 5px;
+    
+}
+
+#conect:hover span:after {/*מעבר עכבר לטקסט שהוספנו*/
+    opacity: 1;
+    right: 0;
+
+}
+
+.titles{ /*הכותרות*/
+    text-align: center;
+}
+
+h1{ /*מאפיינים לכותרת ראשונה*/
+    font-size:45px;
+    margin:5px;
+    color: rgb(176, 75, 2);
+}
+
+h2 { /*מאפיינים לכותרת שניה*/
+    font-size: 30px;
+    margin: 10px;
+    color: rgb(176, 75, 2);
+}
+
+h3 {
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px;
+    color: rgb(176, 75, 2);
+}
+
+h4 {
+    color: rgb(176, 75, 2);
+    margin: 10px;
+    font-size: 20px;
+}
+
+#mycharacters{ /*הדיב של הדמויות*/
+    text-align:center;
+    direction:ltr;
+}
+
+#mycharacters {
+    margin:30px;
+
+}
+
+
+
+#mycharacters > div{ /*הדיב שמכיל את התמונה והכותרת והכפתור*/
+    display:inline-block;
+    height:30%;
+    width:20%;
+    color: rgb(112, 47, 0); /*צבע הטקסט שבתוך הדיב*/
+    
+}
+
+
+#mycharacters > div > img { /*מאפיינים לכל התמונות שבתוך דיב שבתוך איי די הדמויות שלי*/
+
+    height: 30%;
+    width: 100%;
+    border-radius:12px;
+}
+
+#mycharacters > div > a{ /*כפתור מתחת לדמות*/
+
+    background-color:orange;
+    color:white;
+    font-size:20px;
+    text-decoration:none;
+    border:solid black;
+    border-radius:8px;
+}
+
+
+footer {
+    display: block;
+    background-color: rgb(231, 192, 144);
+    height: 70px;
+}
+
+footer ul li a {
+        text-decoration: none;
+        color: rgb(133, 62, 0);
+        font-size: 20px;
+        display: inline-block;
+        float: right;
+        margin: 20px;
+        text-align: center;
+}
+
+footer > ul{
+    list-style:none;
+}
+
+#logofooter {
+    display: inline-block;
+    height: 100%;
+    width: 15%;
+    position:relative;
+    right:330px;
+    
+}
+
+
+
+
+
+/*דף אודות*/
+
+#maintitle{
+    text-align:center;
+}
+
+.card { /*מכיל את כרטיס הביקור שלנו*/
+
+    width: 40%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom:40px;
+}
+
+#cardsean{
+    float:left;
+    margin-left:40px;
+}
+
+#cardmichal{
+    float:right;
+    margin-right:40px;
+}
+
+.card > img { /*התמונה שלנו*/
+
+    width: 50%;
+    height: 30%;
+}
+
+#hit{ /*לוגו של המכון*/
+    height:200px;
+    width:200px;
+    display:block;
+}
+
+#kishor{
+    display:block;
+    font-size:20px;
+    color:black;
+}
+
+#divhit{
+    align-content:center;
+}
+#list {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+/*דף צור קשר*/
+
+#myTextarea {
+
+    height:100px;
+    width:300px;
+}
+
+
+
+
+
+
+
+/*דף ארוחות בוקר*/
+
+#meals > h1{
+
+    margin-top:30px;
+}
+
+.food{ /*קלאס לתמונות*/
+    height:250px;
+    width:250px;
+    margin-top:10px;
+}
+
+.makefood {
+    display: inline-block;
+}
+
+.endfood {
+    display: inline-block;
+    position: relative;
+}
+
+.endfood > h4{
+    text-align:center;
+}
+
+#avocado1{
+    right:100px;
+}
+
+#mushroom1 {
+   right:20px;
+   bottom:40px;
+}
+
+#shibolet1 {
+    right: 40px;
+}
+
+#salad1 {
+    right: 120px;
+    top:25px;
+}
+
+#pancake1{
+    right:30px;
+    bottom:40px;
+}
+
+
+/*דף אימוני בוקר*/
+
+.workoutdiv > img {
+    height:80%;
+    width:80%;
+}
+
+.workoutdiv{
+    display:inline-block;
+    width:40%;
+}
+
+#snob{ /*הכותרת של הדף*/
+    display:block;
+    width:100%;
+    margin-top:40px;
+}
+
+.workouttitles {
+    margin-right: 20px;
+}
+
+.left{
+    float:left;
+}
+
+
+.site-map{
+    margin:20px;
+}

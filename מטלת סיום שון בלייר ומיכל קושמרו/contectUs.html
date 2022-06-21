@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>conect us</title>
+    <meta name="description" content="write your opinio on the website" />
+    <meta name="keywords" content="conect us" />
+    <meta name="author" content="sean bleier, michal koshmaro" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!--לוגו קטן-->
+    <link rel="icon" href="img/favicon.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+
+</head>
+<body>
+    <div id="container">
+
+        <header>
+
+            <nav aria-label="main-nav">
+                <a href="index.html">
+                    <img src="img/לוגו.png" id="logo" alt="לוגו, לחץ כדי לחזור לדף הבית" />
+                </a>
+                <ul id="category">
+                    <li> <a href="#">להתעורר נכון</a> </li>
+                    <li> <a href="#">להירגע בבוקר</a> </li>
+                    <li> <a href="workout.html">אימוני בוקר</a> </li>
+                    <li> <a href="breakfest.html"> ארוחות בוקר</a> </li>
+                    <li> <a href="about.html">אודות</a> </li>
+                </ul>
+                <a href="contectUs.html" id="conect"><span>צור קשר</span></a>
+            </nav>
+
+        </header>
+
+        <main>
+            <div class="conectform">
+                <div id="form-titles">
+                    <h1>צור קשר</h1><br />
+                    <h2>השאר פרטים ונחזור אלייך במהרה</h2><br />
+                </div>
+
+                <form id="conect-form">
+                    <input type="hidden" id="myemail" name="sean" value="seanbleier123@gmail.com" />
+
+                    <label for="first name">
+                        שם פרטי* <br />
+                        <input id="firstname" type="text" placeholder="הקלד שם פרטי" required /><br />
+                    </label>
+
+                    <br />
+
+                    <label for="last name">
+                        שם משפחה* <br />
+                        <input id="last name" type="text" placeholder="הקלד שם משפחה" required /><br />
+                    </label>
+
+                    <br />
+
+                    <label for="email">
+                        אימייל* <br />
+                        <input id="email" type="email" placeholder="אימייל" required /><br />
+                    </label>
+
+                    <br />
+
+                    <label for="phonenumber">
+                        טלפון נייד* <br />
+                        <input id="phonenumber" type="tel" placeholder="טלפון" required /><br />
+                    </label>
+
+                    <br />
+
+                    <fieldset>
+                        <legend>מין:</legend>
+                        <label for=" male">
+                            <input id="male" type="radio" name="gender" checked />גבר
+                        </label>
+
+                        <label for=" female">
+                            <input id="female" type="radio" name="gender" />אישה
+                        </label>
+
+                        <label for=" other">
+                            <input id="other" type="radio" name="gender" />אחר
+                        </label>
+                    </fieldset>
+
+                    <br />
+
+                    <fieldset>
+                        <legend>סיבת הפניה:</legend>
+                        <label for="plan">
+                            <input id="plan" type="checkbox" /> תכנון הבוקר  <br />
+                        </label>
+
+                        <label for="workout">
+                            <input id="workout" type="checkbox" />אימוני בוקר <br />
+                        </label>
+
+                        <label for="calm">
+                            <input id="calm" type="checkbox" />בוקר רגוע <br />
+                        </label>
+
+                        <label for="breakfast">
+                            <input id="breakfast" type="checkbox" />ארוחות בוקר <br />
+                        </label>
+                    </fieldset>
+
+                    <br />
+                    תוכן הפניה: <br />
+                    <textarea id="myTextarea" placeholder="תוכן הפניה" row="10"> </textarea> <br />
+                    <input type="submit" id="send" value="שלח" />
+                    <div id="feedback"></div>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li> <a href="siteMap.html">מפת אתר</a> </li>
+                <li> <a href="contectUs.html">צור קשר</a> </li>
+                <li> <a href="about.html">אודות</a> </li>
+            </ul>
+
+            <a href="index.html">
+                <img src="img/לוגו.png" id="logofooter" alt="לוגו בפוטר, לחץ כדי לחזור לדף הבית" />
+            </a>
+
+
+
+        </footer>
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
